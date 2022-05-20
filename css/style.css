@@ -1,0 +1,169 @@
+.item-separate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 16px;
+  border-left: 1px solid #fb9086;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%);
+}
+
+.btn-not-focus:focus {
+  outline: none;
+}
+
+.btn-not-focus:hover {
+  background-color: #be293d !important;
+}
+
+.form__input {
+  display: flex;
+  margin-left: 30px;
+}
+
+.form {
+  margin-left: 45px;
+}
+
+.input__search {
+  height: 34px;
+  width: 550px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+}
+
+.btn__search {
+  background-color: #eb1616;
+  color: #fff;
+  margin-left: -4px;
+  font-size: 18px;
+  border-color: #dc3545;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 1%);
+}
+
+.cart__shopping {
+  margin-left: 183px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.cart-no-product {
+  position: absolute;
+  background-color: #fff;
+  top: 34px;
+  right: -84px;
+  width: 350px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #dbdbdb;
+  z-index: 1;
+  animation: fadein ease-in 0.2s;
+  display: none;
+  cursor: default;
+}
+
+.cart-no-product::after {
+  content: "";
+  top: -32px;
+  right: 103px;
+  cursor: pointer;
+  position: absolute;
+  border-style: solid;
+  border-width: 20px 23px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.cart__shopping:hover .cart-no-product {
+  display: block;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cart-img {
+  width: 50% !important;
+  padding: 8px 0;
+}
+
+.des-product {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #777;
+}
+
+.nav-link {
+  margin: 0 34px;
+}
+
+.buy {
+  display: flex;
+}
+
+.btn__buy {
+  background-color: #ee4d2d;
+  color: #fff;
+  width: 110px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #f27961;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.btn__buy:hover {
+  opacity: 0.9;
+}
+
+.btn__buy:focus {
+  outline: none;
+}
+
+.btn__insert-cart {
+  outline: none;
+  width: 200px;
+  background-color: #ffeee8;
+}
+
+..btn__insert-cart:hover {
+  background-color: rgba(255, 197, 178, .181);;
+}
+
+.buy__link {
+  color: #ee4d2d;
+}
+
+.buy__link:hover {
+  text-decoration: none;
+  color: #ee4d2d;
+}
+
+.footer-license {
+  background-color: transparent;
+  border-top: 2px solid #d83131;
+  padding: 16px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.license-des {
+  padding: 0 16px;
+}
+
+.license-des__text {
+  text-align: center;
+}
